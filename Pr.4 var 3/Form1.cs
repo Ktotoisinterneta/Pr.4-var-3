@@ -29,7 +29,7 @@ namespace Pr._4_var_3
             double x = x0;
             while (x <= (xk + dx / 2))
             {
-                double y =Math.Pow(10,-1)*a*x*Math.Tan(a-b*x);
+                double y =Math.Pow(10,-1)*a*Math.Pow(x,3)*Math.Tan(a-b*x);
                 
                 string strOut = String.Format("x={0,5} | y={1:f4}", x, y); textBox5.Text += strOut + Environment.NewLine;
                 x = x + dx;
